@@ -1,5 +1,5 @@
 
-let dateRequest = prompt("Пожалуйста, введите Вашу дату рождения в следующем формате: `dd.mm.yyyy`");
+let dateRequest = prompt("Пожалуйста, введите Вашу дату рождения в следующем формате: `dd.mm.yyyy`", '');
 
 let dateNow = new Date();
 
