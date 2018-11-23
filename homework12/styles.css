@@ -1,0 +1,44 @@
+.btn-hidden {
+    display: none;
+}
+
+.input-wrap {
+    width: 450px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;       
+}
+
+.diameter-input {
+    /* display: inline-block;     */
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.color-input {
+    /* display: inline-block;   */
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.btn2 {
+    display: block;
+    margin: 0 auto;
+}
+
+.circleWrap {
+    display: block;
+    width: 450px;
+    height: 300px;   
+    padding-top: 20px;
+}
+
+.circle {
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid;
+}
