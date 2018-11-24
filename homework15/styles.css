@@ -1,0 +1,9 @@
+input {
+    width: 200px;
+}
+.wrapper, .test {
+    text-align: center;
+}
+.test {
+    font-size: 24px;
+}

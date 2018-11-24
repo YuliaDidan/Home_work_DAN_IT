@@ -5,6 +5,7 @@ while (num) {
    if (num == null) break;
    num--;
 }
+
 let parent = document.createElement('ul');
 parent.className = 'list';
 
@@ -16,13 +17,35 @@ for (let i = 0; i < list.length; i++) {
 
 document.body.append(parent);
 
-function clearBoxDelay() {
-    window.setTimeout(function() {
-        document.querySelector('.list').innerHTML = "";  
-    }, 5000);
+let timer = document.createElement('p');
+timer.className = 'timer';
+timer.innerHTML = '5';
+document.body.append(timer);
+
+goTimer();
+
+function goTimer() {
+    window.timerId = window.setInterval(timerCount, 1000);        
+}
+    
+function timerCount() {
+    let number = parseInt(timer.innerHTML) -1;
+    timer.innerHTML = number;
+    if (number == 0) {        
+        clearBox();
+    }
 }
 
-clearBoxDelay();
+function clearBox() {
+    window.setInterval(function() {
+        window.clearInterval(timerId);
+        parent.innerHTML = "";    
+        timer.innerHTML = ""; 
+    }, 1000);    
+          
+}
+
+ 
 
 
 
