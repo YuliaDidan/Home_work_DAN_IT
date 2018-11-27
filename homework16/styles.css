@@ -20,14 +20,9 @@ body {
     background: center center no-repeat cover;
     background-image: url('./img/background.png');
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: #4b4b4b;
 }
-
-.logo__img {
-    fill: red;
-}
-
 
 .logo__name-top,
 .logo__name-bottom {
@@ -113,7 +108,7 @@ body {
 }
 
 .btn a:active {    
-    padding: 6px 15px 5px 15px;
+    padding: 7px 15px 14px 15px;
     border-top: 1px solid rgba(0,0,0,0.55);
     box-shadow: 0 0 10px rgba(0,0,0,0.35), 0px 2px 1px rgba(255,255,255,0.50), inset 0px 1px 4px rgba(0,0,0,0.35), inset 0px -14px 14px rgba(255,255,255,0.10);
     cursor: pointer !important;
