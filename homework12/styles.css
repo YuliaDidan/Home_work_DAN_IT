@@ -1,3 +1,5 @@
+/* regular task */
+
 .btn-hidden {
     display: none;
 }
@@ -9,8 +11,7 @@
     padding-bottom: 20px;       
 }
 
-.diameter-input {
-    /* display: inline-block;     */
+.diameter-input {    
     margin-right: 20px;
     margin-bottom: 30px;
     padding: 5px;
@@ -18,8 +19,7 @@
     text-align: center;
 }
 
-.color-input {
-    /* display: inline-block;   */
+.color-input {    
     padding: 5px;
     width: 200px;
     text-align: center;
@@ -41,4 +41,47 @@
     border-radius: 50%;
     margin: 0 auto;
     border: 2px solid;
+}
+
+/* advanced task */
+
+.input-Wrap {
+    width: 450px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    border: 1px solid red;      
+}
+
+.diameter-Input {    
+    margin: 0 auto 30px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+.btn3 {
+    display: block;
+    margin: 0 auto;
+}
+
+.circles__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.circle-small {
+    border: 1px solid red;
+    border-radius: 50%;    
+    background-color: red;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.circle-small-none {
+    display: none;
 }
