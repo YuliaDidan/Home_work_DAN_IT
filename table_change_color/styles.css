@@ -1,0 +1,26 @@
+table {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    /* background: white; */
+}
+
+.tr {
+    background: white;
+}
+
+td {
+    border: 1px solid green;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.transparent {
+    background-color: inherit;
+}
