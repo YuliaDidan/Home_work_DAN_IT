@@ -34,16 +34,30 @@ createTable();
 
 document.body.addEventListener('click', changeColorOposite);
 
-function changeColorOposite(event) {	
-	let target = event.target.closest('body');	
-	let table = document.getElementById('table');
-	let tr = document.querySelector('tr');	
-	console.log(table);			
-		if(table.className == 'white'){		
-			table.className = 'black';							
+// function changeColorOposite(event) {	
+// 	let target = event.target.closest('body');	
+// 	let table = document.getElementById('table');
+// 	let tr = document.querySelector('tr');	
+// 	console.log(table);			
+// 		if(table.className == 'white'){		
+// 			table.className = 'black';							
+// 		} else {
+// 			table.className = 'white';
+// 		}	
+// }
+
+function changeColorOposite(event) {
+	let target = event.target.closest('body');
+	let td = document.querySelectorAll('td');
+	// console.dir(td);
+	td.forEach(function(element){
+		if(element.className == 'td transparent') {
+			element.className = 'td black'; 
 		} else {
-			table.className = 'white';
-		}	
+			element.className = 'td transparent';
+		}
+	})
+
 }
 
 
