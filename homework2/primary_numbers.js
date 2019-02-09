@@ -1,15 +1,21 @@
-let num = prompt('Please, insert the number!');
+let num = prompt('Please, insert the number!', '');
 
-nextPrime:
-for (var i = 2; i <= num; i++) {
+// console.log(typeof(num));
 
-   for (var j = 2; j < i; j++) {
+while(isNaN(+num) || isNaN(num)) {
+  prompt('Please, insert the number!');
+  
+} 
+  nextPrime:
+    for (var i = 2; i <= num; i++) {
+      for (var j = 2; j < i; j++) {
    // console.log(i, j);
      if (i % j == 0) continue nextPrime;
    }
-
-   console.log( i ); 
+   alert(i); 
  }
+
+
 
 
 // let num = prompt('Please, insert the number!');

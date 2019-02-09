@@ -1,25 +1,52 @@
-let name = prompt('Please, insert your name!', '');
-while (name == '') {
-    name = prompt('Please, insert your name!');
-}
-let age =  prompt('Please, insert your age!', '');
-while (age == '') {
-	age =  prompt('Please, insert your age!', '');
-}
-if (!name || !age) {
-	alert('Goodbye!!!');	
-} else if (age < 18 ) {
-	alert('Sorry! You are not allowed to visit this website!');
-} else if (age > 18 && age <= 22) {
-	let answer = confirm('Are you sure you want to continue?');
-	if (answer) {
-	 alert('Welcome ' + name + '!');	 
-	} else {		
-		alert('Sorry! You are not allowed to visit this website!');
+// let name = prompt('Please, insert your name!', '');
+// while (name == '') {
+//     name = prompt('Please, insert your name!');
+// }
+// let age =  prompt('Please, insert your age!', '');
+// while (age == '') {
+// 	age =  prompt('Please, insert your age!', '');
+// }
+// if (!name || !age) {
+// 	alert('Goodbye!!!');	
+// } else if (age < 18 ) {
+// 	alert('Sorry! You are not allowed to visit this website!');
+// } else if (age > 18 && age <= 22) {
+// 	let answer = confirm('Are you sure you want to continue?');
+// 	if (answer) {
+// 	 alert('Welcome ' + name + '!');	 
+// 	} else {		
+// 		alert('Sorry! You are not allowed to visit this website!');
+// 	}
+// } else {
+// 	alert('Welcome ' + name + '!');
+// }
+
+(function checkData(){	
+		let name = prompt('Please, insert your name!', '');
+			while (name == '') {
+				name = prompt('Please, insert your name!');
+		}
+		let age =  prompt('Please, insert your age!', '');
+			while (age == '') {
+				age =  prompt('Please, insert your age!', '');
 	}
-} else {
-	alert('Welcome ' + name + '!');
-}
+		if (!name || !age) {
+			alert('Goodbye!!!');	
+		} else if (age < 18 ) {
+			alert('Sorry! You are not allowed to visit this website!');
+		} else if (age > 18 && age <= 22) {
+			let answer = confirm('Are you sure you want to continue?');
+			if (answer) {
+			alert('Welcome ' + name + '!');	 
+			} else {		
+				alert('Sorry! You are not allowed to visit this website!');
+			}
+		} else {
+			alert('Welcome ' + name + '!');
+		}	 
+})();
+
+
 
 // let name, age;
 // let allowAccess = false;
