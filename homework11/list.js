@@ -9,11 +9,11 @@ while (num) {
 let parent = document.createElement('ul');
 parent.className = 'list';
 
-for (let i = 0; i < list.length; i++) {
+list.map(function(elem){
     let li = document.createElement('li');
-    li.innerHTML = list[i];    
+    li.innerHTML = elem;    
     parent.appendChild(li);
-}
+});
 
 document.body.append(parent);
 

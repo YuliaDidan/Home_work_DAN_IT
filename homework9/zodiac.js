@@ -1,14 +1,16 @@
-
+(function getAgeAndZodiac() {
+    
 let dateRequest = prompt("Пожалуйста, введите Вашу дату рождения в следующем формате: `dd.mm.yyyy`", '');
+
+let dateBirth = new Date(dateRequest.split('.', 3).reverse().join('-'));
 
 let dateNow = new Date();
 
-let age = dateNow.getFullYear() - +(dateRequest.substr(6, 4));
+let age =  parseInt((dateNow.getTime() - dateBirth.getTime())/(1000*60*60*24*365));
 
 alert('Вам ' + age + ' лет!');
 
-let date = dateRequest.substr(0, 5).split('.').reverse().join('-');
-
+let date = dateRequest.split('-').reverse().slice(0, 2).reverse().join('-');
 
 if (date >= '03-21' && date <= '04-19') {
     alert(`Ваш знак зодиака: Овен!`); 
@@ -35,6 +37,8 @@ if (date >= '03-21' && date <= '04-19') {
 } else {
     alert(`Ваш знак зодиака: Рыбы!`);
 }
+})();
+
 
 
 
