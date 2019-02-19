@@ -1,21 +1,23 @@
-let num = prompt('Please, insert the number!', '');
+let num;
 
-// console.log(typeof(num));
-
-while(isNaN(+num) || isNaN(num)) {
-  prompt('Please, insert the number!');
+while(isNaN(num) || num < 1 || !isInteger(num)) {
+  num = +(prompt('Please, insert the number!'));
+  console.log(num);
+  console.log(typeof(num));
   
+  if (num == 0) break;  
 } 
   nextPrime:
     for (var i = 2; i <= num; i++) {
-      for (var j = 2; j < i; j++) {
-   // console.log(i, j);
+      for (var j = 2; j < i; j++) {   
      if (i % j == 0) continue nextPrime;
    }
    alert(i); 
  }
 
-
+ function isInteger(num) {
+  return (num ^ 0) === num;
+}
 
 
 // let num = prompt('Please, insert the number!');
